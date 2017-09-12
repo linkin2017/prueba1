@@ -1,5 +1,5 @@
 //si quiero sacarlo desde otro lado le pongo import nombreDelArchivo.*    (trae todo, si queres algo en particular le pones el objeto)
-object tom {
+class Gato {
 var energia = 10
 //var velocidad
 const velocidadBase = 5
@@ -43,7 +43,7 @@ method meConvieneComerA(raton, distancia){
 }
 
 
-object jerry {
+class Raton {
 	var peso = 10
 method peso() {
 	return peso
