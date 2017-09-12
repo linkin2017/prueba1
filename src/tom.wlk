@@ -2,7 +2,7 @@
 class Gato {
 var energia = 10
 //var velocidad
-const velocidadBase = 5
+const velocidadBase = 10
 
 //solucion 1 NO ES MUY UTIL
 /*method comerRaton(peso){
@@ -53,6 +53,6 @@ method peso() {
 	
 	
 	 //Lograr que tom entienda el mensaje meConvieneComerA(unRaton, unaDistancia) que devuelve true 
-	 //si la energÌa que gana por comer al ratÛn es mayor a la que consume corriendo la distancia, que 
-	 //est· medida en metros. 
+	 //si la energ√≠a que gana por comer al rat√≥n es mayor a la que consume corriendo la distancia, que 
+	 //est√° medida en metros. 
 	 
