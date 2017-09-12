@@ -2,7 +2,7 @@
 class Gato {
 var energia = 10
 //var velocidad
-const velocidadBase = 10
+const velocidadBase = 20
 
 //solucion 1 NO ES MUY UTIL
 /*method comerRaton(peso){
