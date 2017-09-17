@@ -1,0 +1,42 @@
+import camisetas.*
+import materiales.*
+import clientes.*
+
+describe "testeo general del trabajo practico" {
+	
+	var camiseta1
+	var camiseta2
+	
+	fixture{
+		camiseta1 = new Camiseta(sanMiguel,poliester,'verde',2,3) //2 refuerzos y 3 costuras
+		camiseta2 = new Camiseta(sacachispas,dryfit,'rojo',5,0) //5 refuerzos y sin costuras
+	}
+
+// Tests para requerimientos TP1 actualizados
+	test "test sacachispas acepta camisetas cuando el grado de resistencia es > 9" {
+		assert.that(sacachispas.aceptaCamiseta(camiseta2))
+	}
+	
+	test "test sacachispas no acepta camisetas cuando el grado de resistencia es <= 9" {
+		assert.notThat(sacachispas.aceptaCamiseta(camiseta1))
+	}
+	
+	test "test sanMiguel acepta camisetas cuando el color es verde" {
+		assert.that(sanMiguel.aceptaCamiseta(camiseta1))
+	}
+	
+	test "test sanMiguel no acepta camisetas cuando el color no es verde" {
+		assert.notThat(sanMiguel.aceptaCamiseta(camiseta2))
+	}
+	
+	test "test camiseta1 tiene grado de resistencia 8" {
+		assert.that(camiseta1.gradoResistencia()==8)
+	}
+	test "test camiseta2 tiene grado de resistencia 11.5" {
+		assert.that(camiseta2.gradoResistencia()==11.5)
+	}
+
+// Tests para requerimientos TP2
+	
+	
+}
